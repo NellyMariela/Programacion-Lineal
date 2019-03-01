@@ -1,4 +1,4 @@
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 ## Página de Programación Lineal
 
 En esta página voy a mostrar las cosas magníficas que estoy aprendiendo en el 
@@ -21,4 +21,4 @@ Maximizar \(z=x_1+x_2\).
 
 Sujeto a:
 
-\(x_1\geq 0\)
+\(x_1\geq 0\) y $x_2\geq 0$
