@@ -8,7 +8,7 @@ magnifíco curso de Programación Lineal.
 
 Aprendimos a usar la biblioteca Sympy.
 
-###Enlaces
+### Enlaces
 
 - [Página de python](https://www.python.org/)
 - [Página de Google](https://www.google.com/)
