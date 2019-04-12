@@ -2,6 +2,7 @@
 #+author: Nelly Mariela
 
 #+options: H:2
+#+latex_header: \usepackage{listings}
 
 *  Teoría
 ** Motivación
@@ -27,6 +28,7 @@ desigualdades.
 
 *  Herramientas computancionales
 
+
 **  Emacs
    | C-x C-s       | salvar archivo              |
    | C-x C-f       | abrir archivo               |
@@ -40,11 +42,44 @@ desigualdades.
    | C-w           | borrar la región            |
    | Shift-flechas | seleccionar la región       |
    | C-y           | pegar la región             |
+   | C-x b         | cambiar buffer              |
+   | C-x k         | matar buffer                |
+*** Org mode
+| C-c C-c | corre un bloque de código |
+|         |                           |
+|         |                           |
+|---------+---------------------------|
    
 **  Git
 *** Git en la terminal
 *** Github
 **  Python
 *** El leguaje Python
+    En el lenguaje Python podemos hacer operaciones:
+    
+    #+begin_src python :session
+2+2
+    #+end_src
+
+    #+RESULTS:
+    : 4
+También podemos usar la biblioteca pulp.Por ejemplo,encontramos el
+máximo de \(-4x+y\) sujeto a \(x+y\leq \frac{1}{2}\)
+
+#+begin_src python :session
+from pulp import *
+x = LpVariable("x", 0, 3)
+y = LpVariable("y", 0, 1)
+prob = LpProblem("myProblem", LpMinimize)
+prob += x + y <= 2
+prob += -4*x + y
+status = prob.solve()
+value(x), value(y)
+#+end_src
+
+    #+RESULTS:
+    | 2.0 | 0.0 |
+
+    
 *** Jupyter
 **  LaTeX
