@@ -1,0 +1,12 @@
+#+title: Dualidad en programación lineal
+#+author: Nelly Mariela Moreno Cruz
+#+date: 17 de Mayo de 2019
+
+* Introducción
+  La dualidad es una manera de asociar un cierto problema de
+  programación lineal a cada programa de programación lineal.
+
+* Ejemplo
+  
+* Teoremas
+
